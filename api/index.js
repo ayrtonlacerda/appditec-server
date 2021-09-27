@@ -9,7 +9,9 @@ const pops = require('./controller/pops')
 // app
 
 app.use(express.json());
-
+app.get('/helloworld', async (req, res) => {
+  return res.status(200).json({ m: 'Hello World' })
+})
 app.post('/auth/login', user.Login)
 
 app.use((req, res, next) => {
