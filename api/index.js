@@ -1,6 +1,5 @@
 const express = require('express')
 const app = express()
-const port = 3333
 
 // controllers
 const user = require('./controller/user')
@@ -27,6 +26,4 @@ app.get('/vestigio', vestigios.index)
 app.get('/dowloadpop', pops.index)
 
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+module.exports = app

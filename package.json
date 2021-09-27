@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "babel-node ./src/index.js",
-    "dev": "nodemon src/index.js",
+    "dev": "nodemon ./index.js",
     "transpile": "babel ./src --out-dir dist-server",
     "clean": "rimraf dist-server",
     "build": "npm-run-all clean transpile",
@@ -17,7 +17,7 @@
       "js": "node -r sucrase/register"
     },
     "watch": [
-      "src/*"
+      "api/*"
     ],
     "ignore": [
       "**/__tests__/**",
