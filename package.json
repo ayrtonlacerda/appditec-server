@@ -9,7 +9,6 @@
     "dev": "nodemon ./index.js",
     "transpile": "babel ./src --out-dir dist-server",
     "clean": "rimraf dist-server",
-    "build": "npm-run-all clean transpile",
     "watch:dev": "nodemon"
   },
   "nodemonConfig": {
